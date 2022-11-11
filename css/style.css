@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+/* Utility */
+
+.flex{
+    display: flex;
+}
+
+
+/* Start contain */
+
+.contain-main{
+    width: calc(100% - 241px);
+    height: calc(100vh - 88px);
+    background-color: yellow;
+    overflow-y: auto;
+}
+
+.side-bar{
+    width: 241px;
+    height: calc(100vh - 88px);
+    background-color: red;
+}
+
+.top-bar{
+    height: 64px;
+    background-color: black;
+}
+
+
+
+.prova{
+    height: 1500px;
+    width: 100px;
+    background-color: pink;
+}
+
+
+
+
+/* End contain */
+
+/* footer */
+.play-bar{
+    width: 100%;
+    height: 88px;
+    background-color: black;
+}
