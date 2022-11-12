@@ -1,0 +1,25 @@
+@media screen and (min-width:576px) {
+    .side-bar{
+        width: 241px;
+    }
+
+    .contain-main{
+        width: calc(100% - 241px) ;
+    }
+
+    .top-bar{
+        width: calc(100% - 241px) ;
+    }
+}
+
+@media screen and (min-width:768px){
+    .cln-cards{
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (min-width:992px){
+    .cln-cards{
+        width: calc(100% / 6);
+    }
+}

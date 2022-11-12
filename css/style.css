@@ -11,43 +11,116 @@
     display: flex;
 }
 
+.space-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+} 
+
+.color-white{
+    color: white;
+}
+
 
 /* Start contain */
 
+
+/* structure */
+
 .contain-main{
-    width: calc(100% - 241px);
+    width: calc(100% - 60px);
     height: calc(100vh - 88px);
-    background-color: yellow;
+    background-color: #141922;
     overflow-y: auto;
 }
 
 .side-bar{
-    width: 241px;
+    width: 60px;
     height: calc(100vh - 88px);
-    background-color: red;
+    background-color:#000000;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 .top-bar{
+    width: calc(100% - 60px);
     height: 64px;
-    background-color: black;
+    background-color:rgba(8,11,18,0.9);
+    justify-content: flex-end;
+    position: fixed;
 }
 
+/* internal structure */
 
+/* side-bar */
 
-.prova{
-    height: 1500px;
-    width: 100px;
-    background-color: pink;
+.clm-side-bar{
+    width: 80%;
+    height: 100px;
+    background-color: aqua;
 }
 
+/* top-bar */
+
+.btn-upgrade{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 1rem;  
+}
+
+/* main-view */
+
+.row-menu{
+    margin-top: 65px;
+}
+
+.row-cards{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cln-cards{
+    width: calc(100% / 2);
+    height: 100px;
+    background-color: aqua;
+}
 
 
 
 /* End contain */
 
+
+
 /* footer */
+
+
+/* structure */
 .play-bar{
     width: 100%;
     height: 88px;
-    background-color: black;
+    background-color: #282828;
+}
+
+
+/* internal structure */
+
+.row-play-bar{
+    width: 100%;
+    background-color: beige;
+}
+
+.cln-25{
+    min-width: 20%;
+    height: 44px;
+    background-color: aqua;
+}
+
+.cln-50{
+    width: 40%;
+    height: 44px;
+    background-color: aqua;
 }
