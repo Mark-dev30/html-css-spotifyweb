@@ -1,4 +1,6 @@
 @media screen and (min-width:576px) {
+
+    /* structure */
     .side-bar{
         width: 241px;
     }
@@ -10,6 +12,25 @@
     .top-bar{
         width: calc(100% - 241px) ;
     }
+
+    /* sidebar */
+
+    .logo-small{
+        display: none;
+    }
+
+    .display-none{
+        display: block;
+    }
+
+    .icon-side-bar li, .icon-square{
+        display: flex;
+    }
+
+    .img-footer{
+        width: 44px;
+    }
+
 }
 
 @media screen and (min-width:768px){

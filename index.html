@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Figtree&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/media-query.css">
         <title>Spotify</title>
@@ -15,14 +16,62 @@
         <!-- Start contain -->
         <main class="contain flex">
             <div class="side-bar flex items-center">
-                <div class="clm-side-bar ">
-                    <p>lorem</p>
-                    <p>lorem</p>
-                    <p>lorem</p>
+                <div class="row-side-bar ">
+                    <div class="cln-side-bar text-center">
+                        <div class="logo">
+                            <a href="#"><img class="logo-small" src="./img/logo-small.svg" alt="logo"></a>
+                            <a href="#"><img class="logo-medium display-none" src="./img/logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="icon-side-bar">
+                            <ul>
+                                <li class="items-center color-grey">
+                                    <a href="#"><img class="home" src="./img/home.svg" alt="home"></a>
+                                    <span class="display-none">Home</span>
+                                </li>
+                                <li class="items-center color-grey">
+                                    <a href="#"><img class="home" src="./img/search.svg" alt="search"></a>
+                                    <span class="display-none">Cerca</span>
+                                </li>
+                                <li class="items-center color-grey">
+                                    <a href="#"><img class="home" src="./img/libreria.svg" alt="libreria"></a>
+                                    <span class="display-none">La tua libreria</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cln-side-bar">
+                        <h4 class="color-white display-none">PLAYLIST</h4>
+                        <span class="icon-square color-grey display-none items-center"><i class="fa-solid fa-square-plus"></i> Crea Playlist </span> 
+                    </div>
+                    <div class="cln-side-bar ">
+                        <div class="playlist color-grey ">
+                            <ul class=" display-none">
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="clm-side-bar ">
-                    <p>lorem</p>
-                    <p>lorem</p>
+                <div class="row-side-bar padding-bottom20">
+                    <div class="cln-account">
+                        <div class="content-download color-grey icon-square items-center text-center">
+                            <img class="download" src="./img/download.svg" alt="download">
+                            <span class="display-none margin-left8">Installa app</span>
+                        </div>
+                        <hr class="display-none">
+                        <div class="content-download color-white icon-square items-center text-center">
+                            <img class="profile" src="./img/profile.svg" alt="download">
+                            <span class="display-none margin-left8"><strong> John doe</strong></span>
+                        </div>
+                        
+
+                    </div>
                 </div>
             </div>
             <div class="contain-main">
@@ -30,9 +79,25 @@
                     <a href="#"></a><button class="btn-upgrade color-white" type="button">EFFETTUA L'UPGRADE</button>
                 </div>
                 <div class="main-view">
-                    <div class="row-menu"></div>
+                    <div class="row-menu ">
+                        <ul class="flex color-grey">
+                            <li><a class="color-grey" href=""> IN EVIDENZA</a></li>
+                            <li><a class="color-grey" href="">PODCAST</a></li>
+                            <li><a class="color-grey" href="">CLASSIFICHE</a></li>
+                            <li><a class="color-grey"  href="">GENERI E MOOD</a></li>
+                            <li><a class="color-grey" href="">NUOVE USCITE</a></li>
+                            <li><a class="color-grey" href="">SCOPRI</a></li>
+                        </ul>
+                    </div>
                     <div class="row-cards flex ">
-                        <div class="cln-cards"></div>
+                        <div class="title-cards">
+                            <h2>Recently played</h2>
+                        </div>
+                        <div class="cln-cards">
+                            <img src="./img/metal_lifting.jpg" alt="metal">
+                            <h3>Heavy Metal</h3>
+                            <span>Subtitle</span>
+                        </div>
                         <div class="cln-cards"></div>
                         <div class="cln-cards"></div>
                         <div class="cln-cards"></div>
@@ -54,14 +119,39 @@
         <footer>
             <div class="play-bar flex items-center">
                 <div class="row-play-bar flex space-between">
-                    <div class="cln-25">
-                        lorem fdfgdgdf
+                    <div class="cln-25 flex items-center">
+                       <div class="content-img-song">
+                        <img class="img-footer" src="./img/sinister.jpeg" alt="sinister">
+                       </div>
+                       <div class="content-song-name">
+                        <h6 class="color-white">Sinister</h6>
+                        <span class="song-name color-grey"> Brano Nome </span>
+                       </div>
+                       <div class="content-footer-icon">
+                        <i class="fa-regular fa-heart color-grey"></i>
+                        <i class="fa-regular fa-folder color-grey"></i>
+
+                       </div>
                     </div>
-                    <div class="cln-50">
-                        lorem fdfgdgdf
+                    <div class="cln-50 flex direction-column">
+                        <div class="content-play flex color-white items-center">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                            <i class="fa-regular fa-circle-play"></i>
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </div>
+                        <div class="content-time color-white text-center flex items-center">
+                            <span><strong>0.25</strong></span>
+                            <input class="time"  type="range" id="time" name="time" min="0" max="435">
+                            <span><strong>4.35</strong></span>
+                        </div>
                     </div>
-                    <div class="cln-25">
-                        lorem fdfgdgdf
+                    <div class="cln-25 icon-display flex items-center color-white">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <i class="fa-solid fa-display"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                        <input class="volume"  type="range" id="time" name="time" min="0" max="50">
                     </div>
                 </div>
             </div>
