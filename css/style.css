@@ -68,9 +68,10 @@ a{
     font-size: 15px;
 }
 
-.icon-side-bar li:hover, .icon-square:hover, .playlist li:hover{
+.icon-side-bar li:hover, .icon-square:hover, .playlist li:hover, .content-footer-icon i:hover, .content-song-name span:hover, .content-download:hover span, .menu:hover a{
     color: white;
 }
+
 
 .icon-side-bar li:hover .home{
     filter: invert(0);
@@ -80,18 +81,16 @@ a{
     filter: invert(0);
 }
 
-.content-download:hover span{
-    color: white;
-}
-
-.menu:hover a{
-    color: white;
-}
 
 .container-img:hover .overlay {
     opacity: 1;
-  }
+}
 
+.content-play i:nth-child(3):hover{
+    font-size: 30px;
+}
+
+  
 
 /* Start contain */
 
@@ -311,6 +310,12 @@ a{
     text-align: center;
   }
 
+  .line-yellow{
+    width: 40px;
+    color: greenyellow;
+    margin-left: 30px;
+  }
+
 /* End contain */
 
 
@@ -412,3 +417,4 @@ footer{
 .icon-display i{
     margin-right: 10px;
 }
+
