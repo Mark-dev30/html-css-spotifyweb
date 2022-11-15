@@ -16,56 +16,52 @@
         <!-- Start contain -->
         <main class="contain flex">
             <div class="side-bar flex">
-                <div class="row-side-bar ">
-                    <div class="cln-side-bar text-center">
-                        <div class="logo">
-                            <a href="#"><img class="logo-small" src="./img/logo-small.svg" alt="logo"></a>
-                            <a href="#"><img class="logo-medium display-none" src="./img/logo.svg" alt="logo"></a>
-                        </div>
-                        <div class="icon-side-bar">
-                            <ul>
-                                <li class="items-center border-green color-grey">
-                                    <a href="#"><img class="home" src="./img/home.svg" alt="home"></a>
-                                    <span class="display-none">Home</span>
-                                </li>
-                                <li class="items-center color-grey">
-                                    <a href="#"><img class="home" src="./img/search.svg" alt="search"></a>
-                                    <span class="display-none">Cerca</span>
-                                </li>
-                                <li class="items-center color-grey">
-                                    <a href="#"><img class="home" src="./img/libreria.svg" alt="libreria"></a>
-                                    <span class="display-none">La tua libreria</span>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="row-side-bar-top ">
+                    <div class="logo">
+                        <a href="#"><img class="logo-small" src="./img/logo-small.svg" alt="logo"></a>
+                        <a href="#"><img class="logo-medium display-none " src="./img/logo.svg" alt="logo"></a>
                     </div>
-                    <div class="cln-side-bar">
+                    <div class="icon-side-bar">
+                        <div class="line-green"></div>
+                        <ul>
+                            <li class="items-center color-grey">
+                                <img class="home" src="./img/home.svg" alt="home">
+                                <a href="#"><span class="display-none">Home</span></a>
+                            </li>
+                             <li class="items-center color-grey">
+                                <img class="home" src="./img/search.svg" alt="search">
+                                <a href="#"><span class="display-none">Cerca</span></a>
+                             </li>
+                            <li class="items-center color-grey">
+                                <img class="home" src="./img/libreria.svg" alt="libreria">
+                                <a href="#"><span class="display-none">La tua libreria</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="playlist color-grey ">
                         <h4 class="color-white display-none">PLAYLIST</h4>
-                        <span class="icon-square color-grey display-none items-center"><i class="fa-solid fa-square-plus"></i> Crea Playlist </span> 
-                    </div>
-                    <div class="cln-side-bar ">
-                        <div class="playlist color-grey ">
-                            <ul class=" display-none">
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                            </ul>
-                        </div>
-
+                        <span class="icon-square color-grey display-none items-center">
+                            <i class="fa-solid fa-square-plus"></i> Crea Playlist 
+                        </span>
+                        <ul class="list-playlist display-none">
+                            <li><a class="color-grey" href="#"> Nome Playlist</a></li>
+                            <li><a class="color-grey" href="#"> Nome Playlist</a></li>
+                            <li><a class="color-grey" href="#"> Nome Playlist</a></li>
+                            <li><a class="color-grey" href="#"> Nome Playlist</a></li>
+                            <li><a class="color-grey" href="#"> Nome Playlist</a></li>
+                            <li><a class="color-grey" href="#"> Nome Playlist</a></li>
+                            <li><a class="color-grey" href="#"> Nome Playlist</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="row-side-bar padding-bottom20">
+                <div class="row-side-bar-bottom">
                     <div class="cln-account">
-                        <div class="content-download color-grey icon-square items-center text-center">
+                        <div class="content-download color-grey icon-square items-center">
                             <img class="download" src="./img/download.svg" alt="download">
                             <span class="display-none margin-left8">Installa app</span>
                         </div>
                         <hr class="display-none">
-                        <div class="content-download color-white icon-square items-center text-center">
+                        <div class="content-download color-white icon-square items-center ">
                             <img class="profile" src="./img/profile.svg" alt="download">
                             <span class="display-none margin-left8"><strong> John doe</strong></span>
                         </div>
@@ -243,7 +239,11 @@
                         </div>
                         <div class="content-time color-white text-center flex items-center">
                             <span><strong>0.25</strong></span>
-                            <input class="time"  type="range" min="0" max="435">
+                            <div class="controll-bar">
+                                <div class="played-bar">
+                                    <div class="cursor-bar"></div>
+                                </div>
+                            </div>
                             <span><strong>4.35</strong></span>
                         </div>
                     </div>
@@ -251,7 +251,11 @@
                         <i class="fa-solid fa-list-ul"></i>
                         <i class="fa-solid fa-display"></i>
                         <i class="fa-solid fa-volume-high"></i>
-                        <input class="volume" type="range" min="0" max="50">
+                        <div class="controll-volume">
+                            <div class="played-bar">
+                                <div class="cursor-bar"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
